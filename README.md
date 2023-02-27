@@ -25,9 +25,12 @@ Usando los 'CurrentValueSubject' y 'PassthroughSubject' se envían los datos a l
 - 'CurrentValueSubject': se da un valor por defecto, cuando lo inicializamos le damos un valor que cuando un Subscriber se suscriba lo recibirá automáticamente.
 - 'PassthroughSubject': se inicializa sin ningún valor y después de suscribirnos debemos de enviar algún valor para que el Subscriber reciba valores.
 
-#### PassthroughSubject
-- Se crea una propiedad del tipo: PassthroughSubject<Int: Output, Error: Failed>()
+#### PassthroughSubject y CurrentValueSubject
+- `PassthroughSubject`: Se crea una propiedad del tipo: PassthroughSubject<Int: Output, Error: Failed>().
+- `CurrentValueSubject`: Al inicializarlo se asigna un valor: CurrentValueSubject<String Output, Error: Failed>("Valor del tipo del Output").
 - En este caso se publica la propiedad con un solo valor, por eso se uso 'Send'.
 - Dentro del 'Send' se puede asignar un valor, que se ha completado o un error.
 -- Si se muestra el mensaje de error o completado, ya no se podrá publicar los demás eventos si existiera.
 - Al suscribirnos con el 'Sink', dentro del 'receiveCompletion' se puede diferencia si el envío de eventos a terminado o hubo un error.
+- HandleEvents: se utiliza para hacer Debug a los publisher.
+- AnyCancellable: Para evitar que se libere podemos guardar una referencia de este tipo.
