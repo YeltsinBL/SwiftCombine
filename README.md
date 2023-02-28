@@ -38,3 +38,6 @@ Usando los 'CurrentValueSubject' y 'PassthroughSubject' se envían los datos a l
 ### Operadores
 - `MAP`: Nos permite transformar la información que viaja a través del Publisher.
 -- Cuando un Subscriber espera un tipo en concreto y si el Publisher no lo puede proporcionar, utilizando el Operador Map se puede transformar facilmente.
+- `TRYMAP`: es igual que el 'MAP' normal, solo que aqui se puede lanzar errores dentro de su lógica.
+-- El error viaja a través de todo el 'TRY' hasta llegar al Subscriber y finaliza la recepción de datos.
+-- Se creó una función que transforma el valor y si no se puede, envía un error; esta función se utiliza dentro del 'TryMap'.

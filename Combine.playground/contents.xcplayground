@@ -4,5 +4,6 @@
         <page name='PassthroughSubject y CurrentValueSubject'/>
         <page name='Publisher y Subscriber'/>
         <page name='Operador Map'/>
+        <page name='Operador TRYMAP'/>
     </pages>
 </playground>
