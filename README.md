@@ -34,3 +34,7 @@ Usando los 'CurrentValueSubject' y 'PassthroughSubject' se envían los datos a l
 - Al suscribirnos con el 'Sink', dentro del 'receiveCompletion' se puede diferencia si el envío de eventos a terminado o hubo un error.
 - HandleEvents: se utiliza para hacer Debug a los publisher.
 - AnyCancellable: Para evitar que se libere podemos guardar una referencia de este tipo.
+
+### Operadores
+- `MAP`: Nos permite transformar la información que viaja a través del Publisher.
+-- Cuando un Subscriber espera un tipo en concreto y si el Publisher no lo puede proporcionar, utilizando el Operador Map se puede transformar facilmente.

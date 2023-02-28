@@ -3,5 +3,6 @@
     <pages>
         <page name='PassthroughSubject y CurrentValueSubject'/>
         <page name='Publisher y Subscriber'/>
+        <page name='Operador Map'/>
     </pages>
 </playground>
