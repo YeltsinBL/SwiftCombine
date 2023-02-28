@@ -41,3 +41,9 @@ Usando los 'CurrentValueSubject' y 'PassthroughSubject' se envían los datos a l
 - `TRYMAP`: es igual que el 'MAP' normal, solo que aqui se puede lanzar errores dentro de su lógica.
 -- El error viaja a través de todo el 'TRY' hasta llegar al Subscriber y finaliza la recepción de datos.
 -- Se creó una función que transforma el valor y si no se puede, envía un error; esta función se utiliza dentro del 'TryMap'.
+- `RETRY`: nos ayuda a recuperarnos al enviar un error; si hubo un error al enviar los valores y aún no se ha terminado de enviar, en vez de terminar la suscripción, sigue recibiendo valores.
+-- Se debe de ingresar el número de errores que recibirá para que siga recibiendo valores.
+
+
+
+Guía de referencia en el canal de [SwiftBeta](https://www.youtube.com/watch?v=dJW5OBUUicU&list=PLeTOFRUxkMcq-POY5dWtPT7SKsw3P6xAl&index=1)
